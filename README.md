@@ -16,8 +16,11 @@ $ npm run build
 
 ### How to use it
 **directly on the console**
+
 Open some facebook video link and paste the generated code in `bundle.min.js` in the window/tab console.
+
 **using bookmark/favorites(recommended)**
+
 Add a new bookmark/favorites to your browser and change the URL using the follow syntax:
 ```
 javascript:generated_code_here
