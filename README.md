@@ -23,6 +23,7 @@ Add a new bookmark/favorites to your browser and change the URL using the follow
 javascript:generated_code_here
 ```
 ![example](https://i.imgur.com/KzaiEdV.png "example of bookmark script")
+
 You can save the bookmark with name whatever you want and now you can execute the script every time by click on this bookmark.
 
 ## License
