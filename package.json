@@ -1,0 +1,31 @@
+{
+  "name": "fbvideo-downloader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass styles.scss --output-style=compressed -q styles.css",
+    "prefix": "postcss styles.css --no-map -u autoprefixer -r",
+    "minify": "terser index.js -c -m --mangle-props -o bundle.min.js",
+    "rif": "replace-in-file --configFile=./replace-in-file.config.js",
+    "clean": "rimraf styles.css",
+    "build": "run-s sass prefix minify rif clean --silent"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.7.6",
+    "node-sass": "^4.14.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^7.0.27",
+    "postcss-cli": "^7.1.1",
+    "replace-in-file": "^6.0.0",
+    "terser": "^4.6.12"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ]
+}
